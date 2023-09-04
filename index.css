@@ -133,9 +133,6 @@ header{
     left: 23vw;
     top: 0;
 }
-#sub-cyc1,#sub-cyc2{
-    display: block;
-}
 h1{
     color: white;
     position: absolute;
