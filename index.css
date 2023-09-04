@@ -149,3 +149,106 @@ h1 a:hover{
 #nav-span{
     font-size: 2vw;
 }
+
+/* IQAC Description */
+#Description{
+    width: 90%;
+    border: solid 2px #cf2c31;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Description h2{
+    text-align: center;
+    color: white;
+    background-color:#071b8b;
+    width: max-content;
+    font-size: 5vh;
+    margin: 3%;
+}
+#Description p{
+    color: #555555;
+    width: 95%;
+    font-size: 1.3vw;
+}
+#Description h3{
+    color: #cf2c31;
+    font-size: 1.7vw;
+    width: 95%;
+}
+#Description ul{
+    width: 95%;
+    align-items: left;
+}
+/* Links and Details */
+.links-and-details{
+    display: flex;
+    margin: 3% 0;
+}
+#link-section-seperator{
+    background-color: #071b8b;
+    height: 0.1vh;
+    margin: 5px;
+}
+.links-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 30%;
+}
+.links-details h2{
+    margin-bottom: 0;
+    color: #071b8b;
+    font-size: 2vw;
+}
+.links-details p{
+    font-size: 1.3vw;
+    color: #555555;
+}
+.links-details p a{
+    text-decoration: none;
+}
+.links-container{
+    width: 99.5vw;
+    display: flex;
+}
+.useful-links{
+    /* flex: 1; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 20px 20px 0;
+}
+.useful-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4vw;
+    line-height: 5vh;
+}
+.get-in-touch{
+    width: 30%;
+}
+.get-in-touch p{
+    line-height: 5vh;
+}
+.get-in-touch h2{
+    color: #071b8b;
+    margin-bottom: 20px;
+}
+.get-in-touch a{
+    color: black;
+    text-decoration: none;
+}
+/* footer */
+footer{
+    width: 99.5vw;
+    background-color: #071b8b;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-conts p{
+    color: white;
+}
