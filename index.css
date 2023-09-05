@@ -254,6 +254,9 @@ h1 a:hover{
     font-size: 1.4vw;
     line-height: 5vh;
 }
+.useful-links p a:hover{
+    color: #071b8b;
+}
 #tick-emoji{
     color: #cf2c31;
 }
