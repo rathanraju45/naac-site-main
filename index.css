@@ -113,13 +113,18 @@ header{
     border-radius: 5%;
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
 }
 .nav li ul li{
-    width: 15vw;
     line-height: 2vh;
+    width: max-content;
     margin: 20px;
     position: relative;
     text-align: left;
+    font-weight: 500;
+}
+.nav li ul li a:hover{
+    color: #071b8b;
 }
 .nav li:hover .hover-color{
     border-bottom: solid 5px #cf2c31;
@@ -130,8 +135,20 @@ header{
 }
 .nav li ul li ul{
     position: absolute;
-    left: 23vw;
-    top: 0;
+    left: 100%;
+    transform: translateY(-20%);
+}
+#down-caret{
+    float: right;
+    margin-left: 0;
+    width: 1.2vw;
+    height: 3vh;
+}
+#right-caret{
+    float: right;
+    width: 2vw;
+    height: 3vh;
+    margin-left: 0;
 }
 h1{
     color: white;
@@ -161,8 +178,7 @@ h1 a:hover{
 }
 #Description h2{
     text-align: center;
-    color: white;
-    background-color:#071b8b;
+    color: #071b8b;
     width: max-content;
     font-size: 5vh;
     margin: 3%;
@@ -171,15 +187,26 @@ h1 a:hover{
     color: #555555;
     width: 95%;
     font-size: 1.3vw;
+    line-height: 4vh;
 }
 #Description h3{
     color: #cf2c31;
     font-size: 1.7vw;
     width: 95%;
+    line-height: 10vh;
 }
 #Description ul{
     width: 95%;
     align-items: left;
+}
+#Description li{
+    color: #555555;
+    list-style-type: none;
+    line-height: 4vh;
+    font-size: 1.2vw;
+}
+#pointer{
+    color: #cf2c31 !important;
 }
 /* Links and Details */
 .links-and-details{
@@ -210,8 +237,9 @@ h1 a:hover{
     text-decoration: none;
 }
 .links-container{
-    width: 99.5vw;
+    /* width: 99.5vw; */
     display: flex;
+    width: 90vw;
 }
 .useful-links{
     /* flex: 1; */
@@ -226,11 +254,15 @@ h1 a:hover{
     font-size: 1.4vw;
     line-height: 5vh;
 }
+#tick-emoji{
+    color: #cf2c31;
+}
 .get-in-touch{
     width: 30%;
 }
 .get-in-touch p{
     line-height: 5vh;
+    font-size: large;
 }
 .get-in-touch h2{
     color: #071b8b;
@@ -246,9 +278,32 @@ footer{
     background-color: #071b8b;
     height: 8vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+}
+.foot-conts{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
 }
 .foot-conts p{
     color: white;
+}
+.foot-conts a{
+    text-decoration: none;
+}
+#top{
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+}
+#top-nav{
+    visibility: hidden;
+    font-size: 2vw;
+    align-items: center;
+}
+#top:hover > #top-nav{
+    visibility: visible;
 }
